@@ -15,19 +15,26 @@ Shell scripting for DevOps enables automation of deployment, configuration manag
 
 ### Examples
 
-Copying a file
-```PowerShell
-Copy-Item 'G:\padmini\SourceFolder\NewText.txt' 'C:\DestinationFolder\NewText.txt'
+Making a directory
+```python
+import os
+directory = "testDir"
+parentDir = "C:/Users/iveta_6esu9b1/PycharmProjects"
+path = os.path.join(parentDir, directory)
+os.mkdir(path) #making dir
 ```
 <br />
 
-Removing a file from a folder
-```PowerShell
-Remove-Item 'C:\NewFolderForPowerShell\ImportantNoteRelatedToPowerShell.txt'
+Putting a file into directory
+```python
+fileName = "testFile.txt"
+filePath = os.path.join(path, fileName)
 ```
 <br />
 
-Renaming files
-```PowerShell
-Rename-Item 'C:\NewFolderForPowerShell\PowerShell.txt'
+Writing into directory
+```python
+with open(filePath, "w") as file1:
+    toFile = "Contents of file are written here"
+    file1.write(toFile)
 ```
