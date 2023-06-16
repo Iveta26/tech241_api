@@ -1,4 +1,4 @@
-# Intro to APIs
+# Intro to API
 
 ### What is an API?
 API is used to communicate with other programs, it can translate the programs well.
